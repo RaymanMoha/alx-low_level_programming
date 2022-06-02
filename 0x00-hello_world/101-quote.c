@@ -1,12 +1,10 @@
-#iclude <stdio.h>
-
-int main(char *argv[], int argc)
-{
+#iclude < stdio.h >
 /**
- * main - Entry point
- *
- * Return : 1
+ * main  -  Entry point
+ * Return: Always 1 (Error)
  */
-printf("and that piece of art is useful" - Dora Korpar, 2015-10-19\n");
+int main(void)
+{
+write(1, "and that piece of art is useful" - Dora Korpar, 2015 - 10 - 19\n" 59);
 Return (1);
 }
