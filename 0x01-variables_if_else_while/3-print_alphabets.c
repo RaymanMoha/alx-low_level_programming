@@ -6,23 +6,17 @@
  */
 int main (void)
 {
-	int x, y;
-
-	<<<<<<< HEAD
-		for (m = 97;  m <= 122; m++)
-			putchar(m)
-				for (n = 65; n <= 90; n++)
-					putchar(n);
-	=======
-		for (x = 97; x<= 122; x++)
-		{
-			putchar(x);
-		}
-	for (y = 65; y <= 90; y+=)
-	{
-		putchar(y);
-	}
-	>>>>>>> c38d008b18676f16774155151031a0fcc1c46752
+	char letter;
+	
+	for (letter = 'a'; letter <= 'z'; letter++)
+		
+		putchar(letter);
+	
+	for (letter = 'A'; letter <= 'Z'; letter++)
+		
+		putchar(letter);
+	
 		putchar('\n');
+
 	return (0);
 }
