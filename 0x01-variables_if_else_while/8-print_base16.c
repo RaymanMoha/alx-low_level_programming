@@ -2,6 +2,7 @@
 /**
  * main - Prints numbers0 to 9 and letters a to f
  *
+ * Return: Always 0 (sucess)
  */
 int main(void)
 {
