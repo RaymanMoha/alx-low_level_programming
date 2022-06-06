@@ -23,13 +23,13 @@ int main(void)
 				putchar(j % 10 + '0');
 				if (i * 100 + j != 9899)
 				{
-					putchar(',')
+					putchar(',');
 					putchar(' ');
 				}
 			}
 		}
 	}
-	putchar('\n')
-
+	putchar('\n');
+	{
 		return (0)
 }
