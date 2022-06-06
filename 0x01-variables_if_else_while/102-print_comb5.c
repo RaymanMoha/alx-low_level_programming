@@ -23,6 +23,10 @@ int main(void)
 				putchar(j % 10 + '0');
 				if (i * 100 + j != 9899)
 				{
+					break;
+				}
+				else
+				{
 					putchar(',');
 					putchar(' ');
 				}
@@ -31,5 +35,5 @@ int main(void)
 	}
 	putchar('\n');
 	{
-		return (0)
+		return (0);
 }
