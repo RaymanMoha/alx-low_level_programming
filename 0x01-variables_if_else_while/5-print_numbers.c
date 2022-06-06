@@ -14,5 +14,5 @@ int main(void)
 
 	printf("\n");
 	
-	retun(0);
+	return (0);
 }
