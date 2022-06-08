@@ -1,9 +1,11 @@
 #include "main.h"
-
+#include <stdio.h>
 
 
 /**
- * main - check the code.
+ * main - Entry point
+ * print_alphabet_x10 - function name
+ * declaration - print out alphabets 10 times
  *
  * Return: Always 0.
  *
