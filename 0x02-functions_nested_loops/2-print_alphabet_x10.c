@@ -3,15 +3,14 @@
 
 
 /**
- * main - Entry point
  * print_alphabet_x10 - function name
  * declaration - print out alphabets 10 times
  *
- * Return: Always 0.
+ * Return: void
  *
  */
 
-int main(void)
+void print_alphabet_x10(void)
 
 {
 	int alphabet;
@@ -26,5 +25,4 @@ int main(void)
 		}
 		_putchar('\n');
 	}
-	return (0);
 }
