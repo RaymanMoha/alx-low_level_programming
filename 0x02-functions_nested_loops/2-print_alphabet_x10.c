@@ -17,7 +17,7 @@ int main(void)
 
 	for (b = 1; b <= 10; b++)
 	{
-		for (alphabet = 'a', alphabet <= 'z', alphabet++)
+		for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 
 		{
 			_putchar(alphabet);
