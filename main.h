@@ -1,8 +1,17 @@
-#ifndef MAIN_H
-#define MAIN_H
-
 #include <stdio.h>
+#include <stdlib.h>
 
-void positive_or_negative(int i);
+char *_strdup(char *str);
 
-#endif /* MAIN_H */
+char **strtow(char *str);
+
+char *argstostr(int ac, char **av);
+
+char *str_concat(char *s1, char *s2);
+
+void free_grid(int **grid, int height);
+
+int **alloc_grid(int width, int height);
+
+char *create_array(unsigned int size, char c);
+
