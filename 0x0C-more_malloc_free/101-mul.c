@@ -1,26 +1,25 @@
+#include "main.h"
+void insertc(int j, int st, char *arri, char *str);
+int county(char *str);
 
- #include "main.h"
-  void insertc(int j, int st, char *arri, char *str);
-  int county(char *str);
+/**
+ * strtow - returns a pointer to an array of strings (words)
+ * @str: string
+ * Return: returns a pointer to an array of strings (words)
+ */
+char **strtow(char *str)
+{
+	int i = 0, j, count = 0, st = -1, z;
+	char **arr;
 
- /**
-  * strtow - returns a pointer to an array of strings (words)
-  * @str: string
-  * Return: returns a pointer to an array of strings (words)
-  */
-  char **strtow(char *str)
- {
-	 int i = 0, j, count = 0, st = -1, z;
-	 char **arr;
-
-	 if (str == NULL)
-		 return (NULL);
-	 count = county(str);
-	 arr = (char **) malloc(sizeof(char *) * count);
-	 if (arr == NULL || count == 0)
+	if (str == NULL)
 		return (NULL);
-	 for (j = 0 ; str[j] != '\0' && i < count; j++)
-	 {
+	count = county(str);
+	arr = (char **) malloc(sizeof(char *) * count);
+	if (arr == NULL || count == 0)
+		return (NULL);
+	for (j = 0 ; str[j] != '\0' && i < count; j++)
+	{
 		if (str[j] != ' ' && j == 0)
 			st = j;
 		if (str[j] != ' ' && str[j - 1] == ' ')
@@ -48,6 +47,7 @@
 	arr[i] = NULL;
 	return (arr);
 }
+
 /**
  * insertc - insert
  * @j: j
@@ -56,8 +56,8 @@
  * @str: str
  * Return: Void
  */
- void insertc(int j, int st, char *arri, char *str)
- {
+void insertc(int j, int st, char *arri, char *str)
+{
 	int i = 0, z = 0;
 
 	z = j - st + 1;
@@ -67,18 +67,19 @@
 		st++;
 	}
 	arri[i] = '\0';
- }
- /**
-  * county - count words separated by ' '
-  * @str: string
-  * Return: int
-  */
- int county(char *str)
- {
-	 int i = 0, count = 0;
+}
 
-	 while (str[i])
-	 {
+/**
+ * county - count words separated by ' '
+ * @str: string
+ * Return: int
+ */
+int county(char *str)
+{
+	int i = 0, count = 0;
+
+	while (str[i])
+	{
 		if (str[i] != ' ' && i == 0)
 		{
 			count++;
