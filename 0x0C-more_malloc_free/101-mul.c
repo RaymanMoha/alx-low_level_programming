@@ -1,5 +1,3 @@
-
-  
 #include "main.h"
 void insertc(int j, int st, char *arri, char *str);
 int county(char *str);
