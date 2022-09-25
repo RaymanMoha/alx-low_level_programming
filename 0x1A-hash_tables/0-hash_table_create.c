@@ -5,7 +5,7 @@
  * @size: size of the hash table.
  *
  * Return: ptr to the hash table type, otherwise
- *		NULL - if something goes wrong
+ * NULL - if something goes wrong
  */
 
 hash_table_t *hash_table_create(unsigned long int size)
