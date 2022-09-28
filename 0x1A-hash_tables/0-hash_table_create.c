@@ -3,14 +3,13 @@
 /**
  * hash_table_create - function that creates a hash table.
  * @size: size of the hash table.
- *
  * Return: ptr to the hash table type, otherwise
- *		NULL - if something goes wrong
+ * NULL - if something goes wrong
  */
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *ht;
+	hash_table_t  *ht;
 
 	if (!size)
 		return (NULL);
@@ -25,5 +24,5 @@ hash_table_t *hash_table_create(unsigned long int size)
 		free(ht);
 		return (NULL);
 	}
-	return (ht);
+	return (*ht)
 }
