@@ -9,9 +9,15 @@
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
+<<<<<<< HEAD
      	HEAD
 	hash_table_t  *ht;
 hash_table_t *ht;
+=======
+	hash_table_t  *ht;
+hash_table_t *ht;
+
+>>>>>>> 3b071730132c5e67f69cbc4856aaf3ecdc84701c
 if (!size)
 return (NULL);
 
