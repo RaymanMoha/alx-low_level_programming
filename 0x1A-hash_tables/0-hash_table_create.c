@@ -9,17 +9,22 @@
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
+<<<<<<< HEAD
 	hash_table_t  *ht;
+=======
+hash_table_t *ht;
+>>>>>>> bca85d0bc7ad10eb54a177c58cc3ec3ffbaf6ac5
 
-	if (!size)
-		return (NULL);
+if (!size)
+return (NULL);
 
-	ht = calloc(1, sizeof(hash_table_t));
+ht = calloc(1, sizeof(hash_table_t));
 	if (!ht)
 		return (NULL);
 	ht->size = size;
 	ht->array = calloc(size, sizeof(hash_node_t *));
-	if (!ht->array)
+
+if (!ht->array)
 	{
 		free(ht);
 		return (NULL);
